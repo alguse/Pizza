@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C615F43D1C651E6000042C59 /* Confirma.swift in Sources */ = {isa = PBXBuildFile; fileRef = C615F43C1C651E6000042C59 /* Confirma.swift */; };
+		C615F43F1C6522B700042C59 /* Cocina.swift in Sources */ = {isa = PBXBuildFile; fileRef = C615F43E1C6522B700042C59 /* Cocina.swift */; };
+		C615F4411C65252500042C59 /* Ingredientes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C615F4401C65252500042C59 /* Ingredientes.swift */; };
 		C6E239611C62726C00A410C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E239601C62726C00A410C2 /* AppDelegate.swift */; };
 		C6E239631C62726C00A410C2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E239621C62726C00A410C2 /* ViewController.swift */; };
 		C6E239661C62726D00A410C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6E239641C62726D00A410C2 /* Main.storyboard */; };
@@ -14,6 +17,9 @@
 		C6E2396B1C62726D00A410C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6E239691C62726D00A410C2 /* LaunchScreen.storyboard */; };
 		C6E239761C62726D00A410C2 /* PizzaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E239751C62726D00A410C2 /* PizzaTests.swift */; };
 		C6E239811C62726D00A410C2 /* PizzaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E239801C62726D00A410C2 /* PizzaUITests.swift */; };
+		C6E239911C627AD100A410C2 /* MasaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E239901C627AD100A410C2 /* MasaViewController.swift */; };
+		C6E239931C63ED2100A410C2 /* Queso.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E239921C63ED2100A410C2 /* Queso.swift */; };
+		C6E239951C6428EC00A410C2 /* cocina in Sources */ = {isa = PBXBuildFile; fileRef = C6E239941C6428EC00A410C2 /* cocina */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +40,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C615F43C1C651E6000042C59 /* Confirma.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Confirma.swift; sourceTree = "<group>"; };
+		C615F43E1C6522B700042C59 /* Cocina.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cocina.swift; sourceTree = "<group>"; };
+		C615F4401C65252500042C59 /* Ingredientes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ingredientes.swift; sourceTree = "<group>"; };
 		C6E2395D1C62726C00A410C2 /* Pizza.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pizza.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6E239601C62726C00A410C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C6E239621C62726C00A410C2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +56,9 @@
 		C6E2397C1C62726D00A410C2 /* PizzaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PizzaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6E239801C62726D00A410C2 /* PizzaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaUITests.swift; sourceTree = "<group>"; };
 		C6E239821C62726D00A410C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C6E239901C627AD100A410C2 /* MasaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasaViewController.swift; sourceTree = "<group>"; };
+		C6E239921C63ED2100A410C2 /* Queso.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Queso.swift; sourceTree = "<group>"; };
+		C6E239941C6428EC00A410C2 /* cocina */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cocina; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +111,12 @@
 			children = (
 				C6E239601C62726C00A410C2 /* AppDelegate.swift */,
 				C6E239621C62726C00A410C2 /* ViewController.swift */,
+				C615F4401C65252500042C59 /* Ingredientes.swift */,
+				C615F43C1C651E6000042C59 /* Confirma.swift */,
+				C6E239901C627AD100A410C2 /* MasaViewController.swift */,
+				C6E239921C63ED2100A410C2 /* Queso.swift */,
+				C615F43E1C6522B700042C59 /* Cocina.swift */,
+				C6E239941C6428EC00A410C2 /* cocina */,
 				C6E239641C62726D00A410C2 /* Main.storyboard */,
 				C6E239671C62726D00A410C2 /* Assets.xcassets */,
 				C6E239691C62726D00A410C2 /* LaunchScreen.storyboard */,
@@ -256,8 +274,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C615F43D1C651E6000042C59 /* Confirma.swift in Sources */,
+				C6E239911C627AD100A410C2 /* MasaViewController.swift in Sources */,
 				C6E239631C62726C00A410C2 /* ViewController.swift in Sources */,
+				C6E239951C6428EC00A410C2 /* cocina in Sources */,
 				C6E239611C62726C00A410C2 /* AppDelegate.swift in Sources */,
+				C6E239931C63ED2100A410C2 /* Queso.swift in Sources */,
+				C615F4411C65252500042C59 /* Ingredientes.swift in Sources */,
+				C615F43F1C6522B700042C59 /* Cocina.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -480,6 +504,7 @@
 				C6E239871C62726D00A410C2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C6E239881C62726D00A410C2 /* Build configuration list for PBXNativeTarget "PizzaTests" */ = {
 			isa = XCConfigurationList;
@@ -488,6 +513,7 @@
 				C6E2398A1C62726D00A410C2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C6E2398B1C62726D00A410C2 /* Build configuration list for PBXNativeTarget "PizzaUITests" */ = {
 			isa = XCConfigurationList;
@@ -496,6 +522,7 @@
 				C6E2398D1C62726D00A410C2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
