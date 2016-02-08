@@ -1,8 +1,8 @@
 //
-//  InterfaceController.swift
-//  WristPizza Extension
+//  QusoInterfaceController.swift
+//  Pizza
 //
-//  Created by Sergio Albarran on 06/02/16.
+//  Created by Sergio Albarran on 07/02/16.
 //  Copyright © 2016 Sergio Albarran. All rights reserved.
 //
 
@@ -10,19 +10,24 @@ import WatchKit
 import Foundation
 
 
-class InterfaceController: WKInterfaceController {
-
+class QusoInterfaceController: WKInterfaceController {
+    var tamaño : String = ""
+    var masa : String = ""
+    var queso : String = "Mozzarela"
+    
     @IBOutlet var pick: WKInterfacePicker!
-    var tamaño : String = "Chica"
-
     
     var itemList: [(String, String)] = [
-        ("Size 1", "Chica"),
-        ("Size 2", "Mediana"),
-        ("Size 3", "Grande")]
+        ("Size 1", "Mozzarela "),
+        ("Size 2", "Cheddar"),
+        ("Size 3", "Parmesano"),
+        ("Size 4", "Sin queso")]
     
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
+        let c = context as! Pedido
+        tamaño = c.tamaño
+        masa = c.masa
         
         let pickerItems: [WKPickerItem] = itemList.map {
             let pickerItem = WKPickerItem()
@@ -31,18 +36,17 @@ class InterfaceController: WKInterfaceController {
             return pickerItem
         }
         pick.setItems(pickerItems)
-        pick.setSelectedItemIndex(0)
-    }
-
-    @IBAction func pasoSig() {
-        let context: AnyObject? = Pedido(t: tamaño, m: "", q: "", i: [])
-        pushControllerWithName("Masa", context: context)
     }
     
     @IBAction func pickerChanged(value: Int) {
-        tamaño = itemList[value].1
+        queso = itemList[value].1
     }
     
+    @IBAction func pasoSig() {
+        let context: AnyObject? = Pedido(t: tamaño, m: masa, q: queso, i: [])
+        pushControllerWithName("Ingredientes", context: context)
+    }
+
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
         super.willActivate()

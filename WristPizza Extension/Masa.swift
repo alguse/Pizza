@@ -1,6 +1,6 @@
 //
-//  InterfaceController.swift
-//  WristPizza Extension
+//  Masa.swift
+//  Pizza
 //
 //  Created by Sergio Albarran on 06/02/16.
 //  Copyright © 2016 Sergio Albarran. All rights reserved.
@@ -10,19 +10,22 @@ import WatchKit
 import Foundation
 
 
-class InterfaceController: WKInterfaceController {
+class Masa: WKInterfaceController {
 
+    var tamaño : String = ""
+    var masa : String = "Delgada"
+    
     @IBOutlet var pick: WKInterfacePicker!
-    var tamaño : String = "Chica"
-
     
     var itemList: [(String, String)] = [
-        ("Size 1", "Chica"),
-        ("Size 2", "Mediana"),
-        ("Size 3", "Grande")]
+        ("Size 1", "Delgada "),
+        ("Size 2", "Crujiente"),
+        ("Size 3", "Gruesa")]
     
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
+        let c = context as! Pedido
+        tamaño = c.tamaño
         
         let pickerItems: [WKPickerItem] = itemList.map {
             let pickerItem = WKPickerItem()
@@ -31,17 +34,18 @@ class InterfaceController: WKInterfaceController {
             return pickerItem
         }
         pick.setItems(pickerItems)
-        pick.setSelectedItemIndex(0)
-    }
-
-    @IBAction func pasoSig() {
-        let context: AnyObject? = Pedido(t: tamaño, m: "", q: "", i: [])
-        pushControllerWithName("Masa", context: context)
     }
     
     @IBAction func pickerChanged(value: Int) {
-        tamaño = itemList[value].1
+        masa = itemList[value].1
     }
+    
+    @IBAction func pasoSig() {
+        let context: AnyObject? = Pedido(t: tamaño, m: masa, q: "", i: [])
+
+        pushControllerWithName("Queso", context: context)
+    }
+    
     
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user

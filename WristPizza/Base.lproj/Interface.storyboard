@@ -5,15 +5,100 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="10028"/>
     </dependencies>
     <scenes>
-        <!--Interface Controller-->
+        <!--Masa-->
+        <scene sceneID="yBN-fv-qZ2">
+            <objects>
+                <controller identifier="Masa" id="RS7-xa-nCg" customClass="Masa" customModule="WristPizza_Extension">
+                    <items>
+                        <label alignment="left" text="Paso 2: Masa" id="6Oa-8O-EaO"/>
+                        <picker height="100" alignment="left" id="HON-cu-MDo">
+                            <connections>
+                                <action selector="pickerChanged:" destination="RS7-xa-nCg" id="gdl-bO-s6H"/>
+                            </connections>
+                        </picker>
+                        <button width="1" alignment="left" title="Siguiente" id="kcx-Ih-EgO">
+                            <connections>
+                                <action selector="pasoSig" destination="RS7-xa-nCg" id="Y34-cb-taT"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="pick" destination="HON-cu-MDo" id="wSt-4J-6ju"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="476" y="345"/>
+        </scene>
+        <!--Queso-->
+        <scene sceneID="82l-b0-P8d">
+            <objects>
+                <controller identifier="Queso" id="PEl-Oc-5Gv" customClass="QusoInterfaceController" customModule="WristPizza_Extension">
+                    <items>
+                        <label alignment="left" text="Paso 3: Queso" id="mWO-Ce-Ahc"/>
+                        <picker height="100" alignment="left" id="Wi0-f8-O7D">
+                            <connections>
+                                <action selector="pickerChanged:" destination="PEl-Oc-5Gv" id="d7r-qT-4gE"/>
+                            </connections>
+                        </picker>
+                        <button width="1" alignment="left" title="Siguiente" id="EyG-uu-lYO">
+                            <connections>
+                                <action selector="pasoSig" destination="PEl-Oc-5Gv" id="VFg-g6-g75"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="pick" destination="Wi0-f8-O7D" id="AJg-Ta-ntB"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="692" y="345"/>
+        </scene>
+        <!--Confirma-->
+        <scene sceneID="qNY-Hj-Ra0">
+            <objects>
+                <controller identifier="Confirma" id="dhe-MS-V8G" customClass="ConfirmaInterfaceController" customModule="WristPizza_Extension">
+                    <items>
+                        <label height="19.5" alignment="left" text="Confirma tu pedido" minimumScaleFactor="0.0" id="PIY-DE-8ME"/>
+                        <label width="1" alignment="left" text="Tamaño:" minimumScaleFactor="0.0" id="r3D-2t-owU"/>
+                        <label alignment="left" text="Masa:" minimumScaleFactor="0.0" id="72S-KU-LmT"/>
+                        <label alignment="left" text="Queso:" minimumScaleFactor="0.0" id="zDS-bl-vMZ"/>
+                        <label width="1" height="52.5" alignment="left" numberOfLines="2" minimumScaleFactor="0.0" id="eLT-Yj-Gfo"/>
+                        <button width="1" alignment="left" title="Cocinar" id="CKz-Ur-dDg">
+                            <connections>
+                                <action selector="Cocinar" destination="dhe-MS-V8G" id="xhr-4F-s23"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="ing_label" destination="eLT-Yj-Gfo" id="sdL-s0-Q8K"/>
+                        <outlet property="masa_label" destination="72S-KU-LmT" id="hlc-8w-QyT"/>
+                        <outlet property="queso_label" destination="zDS-bl-vMZ" id="mTh-at-0Ng"/>
+                        <outlet property="tamaño_label" destination="r3D-2t-owU" id="Ub8-oI-j8H"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="922" y="353.5"/>
+        </scene>
+        <!--Inicio-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="WristPizza" customModuleProvider="target">
+                <controller identifier="Inicio" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="WristPizza_Extension">
                     <items>
                         <label alignment="left" text="Paso 1: Tamaño" id="WKV-1b-XkM"/>
-                        <picker height="100" alignment="left" id="yvO-Wp-h7k"/>
-                        <button width="1" alignment="left" title="Siguiente" id="BXX-Nf-k8e"/>
+                        <picker height="100" alignment="left" accessibilityValue="Chica" id="yvO-Wp-h7k">
+                            <connections>
+                                <action selector="pickerChanged:" destination="AgC-eL-Hgc" id="Sjo-Rm-xQB"/>
+                            </connections>
+                        </picker>
+                        <button width="1" alignment="left" title="Siguiente" id="6Pj-Ml-dRJ">
+                            <connections>
+                                <action selector="pasoSig" destination="AgC-eL-Hgc" id="PeV-hI-ydM"/>
+                            </connections>
+                        </button>
                     </items>
+                    <connections>
+                        <outlet property="pick" destination="yvO-Wp-h7k" id="y8K-Lu-AAs"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="220" y="345"/>
@@ -40,6 +125,70 @@
                 <controller id="4sK-HA-Art" customClass="NotificationController" customModule="WristPizza" customModuleProvider="target"/>
             </objects>
             <point key="canvasLocation" x="468" y="643"/>
+        </scene>
+        <!--Ingredientes-->
+        <scene sceneID="oXa-KH-U2P">
+            <objects>
+                <controller identifier="Ingredientes" id="dDR-CA-gzb" customClass="IngInterfaceController" customModule="WristPizza_Extension">
+                    <items>
+                        <label alignment="left" text="Paso 4: Ingredientes" id="qSX-AO-Rlc"/>
+                        <switch width="1" alignment="left" value="YES" title="Jamón" id="dxr-Od-GRm">
+                            <connections>
+                                <action selector="switchAction:" destination="dDR-CA-gzb" id="pKU-Sb-YrN"/>
+                            </connections>
+                        </switch>
+                        <switch width="1" alignment="left" value="YES" title="Pepperoni" id="AOb-Iv-Uqi">
+                            <connections>
+                                <action selector="switchAction2:" destination="dDR-CA-gzb" id="Sdl-zK-cxi"/>
+                            </connections>
+                        </switch>
+                        <switch width="1" alignment="left" value="YES" title="Pavo" id="TsF-j5-kDM">
+                            <connections>
+                                <action selector="switchAction3:" destination="dDR-CA-gzb" id="6KH-hZ-k5N"/>
+                            </connections>
+                        </switch>
+                        <switch width="1" alignment="left" value="YES" title="Aceitunas" id="sii-Zd-klK">
+                            <connections>
+                                <action selector="switchAction4:" destination="dDR-CA-gzb" id="ymz-kU-Tou"/>
+                            </connections>
+                        </switch>
+                        <switch width="1" alignment="left" value="YES" title="Pimientos" id="56W-Dh-VMr">
+                            <connections>
+                                <action selector="switchAction5:" destination="dDR-CA-gzb" id="M9g-K6-Z3F"/>
+                            </connections>
+                        </switch>
+                        <button width="1" alignment="left" title="Confirmar" id="QrP-78-vfj">
+                            <connections>
+                                <action selector="confimar" destination="dDR-CA-gzb" id="HEX-yX-vRK"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="ing1" destination="dxr-Od-GRm" id="h7h-Jm-OWf"/>
+                        <outlet property="ing2" destination="AOb-Iv-Uqi" id="f64-zH-ULp"/>
+                        <outlet property="ing3" destination="TsF-j5-kDM" id="T58-GI-4qh"/>
+                        <outlet property="ing4" destination="sii-Zd-klK" id="qhj-Wa-JHR"/>
+                        <outlet property="ing5" destination="56W-Dh-VMr" id="V9H-M6-EpG"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="692" y="681"/>
+        </scene>
+        <!--reinicio-->
+        <scene sceneID="SlB-l8-8z6">
+            <objects>
+                <controller identifier="reinicio" id="uGz-2h-H7X" customClass="ReInterfaceController" customModule="WristPizza_Extension">
+                    <items>
+                        <label height="110.5" alignment="left" text="Gracias por tu pedido. Puedes hacer otro pedido si gustas" numberOfLines="4" id="gIC-pL-tG9"/>
+                        <button width="1" alignment="left" title="Iniciar" id="6TL-Xd-UUZ">
+                            <connections>
+                                <action selector="Reinicio" destination="uGz-2h-H7X" id="O5h-tx-urm"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="922" y="661.5"/>
         </scene>
     </scenes>
 </document>
