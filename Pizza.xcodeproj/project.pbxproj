@@ -18,6 +18,9 @@
 		C615F43D1C651E6000042C59 /* Confirma.swift in Sources */ = {isa = PBXBuildFile; fileRef = C615F43C1C651E6000042C59 /* Confirma.swift */; };
 		C615F43F1C6522B700042C59 /* Cocina.swift in Sources */ = {isa = PBXBuildFile; fileRef = C615F43E1C6522B700042C59 /* Cocina.swift */; };
 		C615F4411C65252500042C59 /* Ingredientes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C615F4401C65252500042C59 /* Ingredientes.swift */; };
+		C62E0E011CA57FE400940AF8 /* wall.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C62E0E001CA57FE400940AF8 /* wall.jpg */; };
+		C62E0E031CA583A400940AF8 /* round.png in Resources */ = {isa = PBXBuildFile; fileRef = C62E0E021CA583A400940AF8 /* round.png */; };
+		C62E0E051CA5852000940AF8 /* bt.png in Resources */ = {isa = PBXBuildFile; fileRef = C62E0E041CA5852000940AF8 /* bt.png */; };
 		C6AAC3991C67105600033189 /* Masa.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AAC3981C67105600033189 /* Masa.swift */; };
 		C6AAC39B1C67ACE400033189 /* Pedido.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AAC39A1C67ACE400033189 /* Pedido.swift */; };
 		C6AAC39F1C67CDC300033189 /* QusoInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AAC39E1C67CDC300033189 /* QusoInterfaceController.swift */; };
@@ -105,6 +108,9 @@
 		C615F43C1C651E6000042C59 /* Confirma.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Confirma.swift; sourceTree = "<group>"; };
 		C615F43E1C6522B700042C59 /* Cocina.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cocina.swift; sourceTree = "<group>"; };
 		C615F4401C65252500042C59 /* Ingredientes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ingredientes.swift; sourceTree = "<group>"; };
+		C62E0E001CA57FE400940AF8 /* wall.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wall.jpg; sourceTree = "<group>"; };
+		C62E0E021CA583A400940AF8 /* round.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = round.png; sourceTree = "<group>"; };
+		C62E0E041CA5852000940AF8 /* bt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bt.png; sourceTree = "<group>"; };
 		C6AAC3981C67105600033189 /* Masa.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Masa.swift; sourceTree = "<group>"; };
 		C6AAC39A1C67ACE400033189 /* Pedido.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pedido.swift; sourceTree = "<group>"; };
 		C6AAC39E1C67CDC300033189 /* QusoInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QusoInterfaceController.swift; sourceTree = "<group>"; };
@@ -215,6 +221,9 @@
 		C6E2395F1C62726C00A410C2 /* Pizza */ = {
 			isa = PBXGroup;
 			children = (
+				C62E0E001CA57FE400940AF8 /* wall.jpg */,
+				C62E0E021CA583A400940AF8 /* round.png */,
+				C62E0E041CA5852000940AF8 /* bt.png */,
 				C6E239601C62726C00A410C2 /* AppDelegate.swift */,
 				C6E239621C62726C00A410C2 /* ViewController.swift */,
 				C615F4401C65252500042C59 /* Ingredientes.swift */,
@@ -414,7 +423,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				C6E2396B1C62726D00A410C2 /* LaunchScreen.storyboard in Resources */,
+				C62E0E051CA5852000940AF8 /* bt.png in Resources */,
 				C6E239681C62726D00A410C2 /* Assets.xcassets in Resources */,
+				C62E0E031CA583A400940AF8 /* round.png in Resources */,
+				C62E0E011CA57FE400940AF8 /* wall.jpg in Resources */,
 				C6E239661C62726D00A410C2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
